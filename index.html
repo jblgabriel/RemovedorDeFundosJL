@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Removedor de Fundo JL</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Removedor de Fundo JL</h1>
+        <input type="file" id="upload" accept="image/*" hidden>
+        <button id="uploadButton">Upload</button>
+        <img id="uploadedImage" src="" alt="" style="display:none;">
+        <div id="colorPickerContainer" style="display:none;">
+            <label for="colorPicker">Escolha uma cor para remover:</label>
+            <input type="color" id="colorPicker">
+            <button id="colorPickerButton">🎨</button>
+            <button id="removeColorButton">Remover fundo</button>
+        </div>
+        <canvas id="canvas" style="display:none;"></canvas>
+        <a id="downloadLink" style="display:none;">Baixar imagem</a>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
